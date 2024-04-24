@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Sushi Love</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">9 9123 8312
+                    </span>
+                </p>
+                <p class="main-header__contactInfo__addres">
+                    <span class="icon-location">Ramuntcho 328 - Hualpén</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main_nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link ">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link ">Galeria</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link menu__link--select">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="https://www.google.com/" target="_blank" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="https://www.instagram.com/" target="_blank"class="social-icon__link"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="img/banner_galeria.jpg" alt="" class="banner__img">
+        <div class="banner__content">Nuestro Contacto</div>
+    </section>
+    <main class="main">
+        <section class="group--color">
+            <div class="container">
+                <h2 class="main__title">¡Contáctanos!</h2>
+                <p class="main_txt">
+                    ¿Listo para descubrir nuestros sabores únicos? ¡Nos encantaría saber de ti! Completa el formulario de contacto a continuación para hacer una reserva, solicitar información adicional o simplemente compartir tus comentarios. Estamos aquí para ayudarte en todo lo que necesites.
+
+                    Además, para facilitar tu visita, hemos incluido un mapa de Google a continuación para que encuentres fácilmente nuestra ubicación. ¡Esperamos verte pronto en nuestro restaurante!
+                </p>
+            </div>
+        </section> 
+        <!-- Formulario -->
+        <div class="formulario">
+            <h5>Reserva en nuestro restaurante</h5>
+            <div class="row">
+                <div class="column left">
+                    <form id="reservation-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="date" name="date" required>
+                        
+                        <label for="time">Hora:</label>
+                        <input type="time" id="time" name="time" required>
+                        
+                        <label for="guests">Número de invitados:</label>
+                        <input type="number" id="guests" name="guests" min="1" required>
+                        
+                        <button type="submit">Enviar reserva</button>
+                    </form>
+                </div> 
+            
+                <div class="column right">
+                    <div id="mapa-contacto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d949.8576730452621!2d-73.09133566849033!3d-36.7962850616745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669ca810658b07d%3A0x1306e609348a1bbc!2sKimagure%20Sushi!5e0!3m2!1ses-419!2scl!4v1713915087277!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+          <script src="script.js"></script>
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">Visitanos</h2>
+                <p class="column__txt">Visítanos en Av. Padre Hurtado Norte 1521, Vitacura, Chile.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contactenos</h2>
+                <p class="column__txt">Ramuntcho 328 - Hualpén</p>
+                <p class="column__txt">Telefono: 9 9123 8312</p>
+               
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Siguenos</h2>
+                <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter">Twitter</a></p>
+                <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p>
+            </div>
+            <p class="copy">@ 2023 Sushi Love | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
